@@ -1,2 +1,5 @@
-credentials.txt
 node_modules
+credentials.txt
+
+
+package-lock.json

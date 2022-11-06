@@ -50,7 +50,8 @@ router.delete('/:postId', async (req, res) => {
 })
 
 //Update a post, updateOne is acting weird so I'm using upsert
-router.patch('./:postId', async (req, res) => {
+//Imma an idiot it was just a misspelling afterall
+router.patch('/:postId', async (req, res) => {
     try{
         const filter = { _id: req.params.postId };
         const update = { title: req.body.title };
