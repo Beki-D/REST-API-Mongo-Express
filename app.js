@@ -7,6 +7,8 @@ require('dotenv/config');
 
 app.use(bodyParser.json());
 
+const PORT = process.env.PORT || 3000;
+
 //Import routes
 const postsRoute = require('./routes/posts');
 
@@ -26,4 +28,4 @@ mongoose.connect(
 
 
 //Listen to server
-app.listen(3000);
+app.listen(PORT);
