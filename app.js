@@ -2,10 +2,13 @@ const express = require('express');
 const app = express();
 const { default: mongoose } = require('mongoose');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 require('dotenv/config');
 
+//Middlewares
 app.use(bodyParser.json());
+app.use(cors());
 
 const PORT = process.env.PORT || 3000;
 
